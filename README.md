@@ -23,10 +23,7 @@ protected void onCreate(Bundle savedInstanceState) {
     super.onCreate(savedInstanceState);
 	
     try {		
-	  mSafeChargeAuthRequest = new AuthorizationRequest("#MerchantId#",
-	  													"#merchantSiteId#",
-														"#clientRequestId#",
-														"#secretKey#");
+	  mSafeChargeAuthRequest = new AuthorizationRequest("#MerchantId#","#merchantSiteId#","#clientRequestId#","#secretKey#");
 																												
       mSafeChargeFragment = mSafeChargeFragment.newInstance(this, mSafeChargeAuthRequest);
     }
