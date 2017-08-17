@@ -43,7 +43,7 @@ mSafeChargeFragment.addPaymentListener(new SafechargePaymentListener() {
 	public void onTokenizeCard(CardTransactionResultModel cardTransactionResult) {
 		//everything you need
 	}
-
+	@Override 
 	public void onTokenizeCardError(ServiceError error) {
 		//service error can be handled here
 	}
@@ -52,7 +52,7 @@ mSafeChargeFragment.addPaymentListener(new SafechargePaymentListener() {
 mSafeChargeFragment.addFragmentListener(new SafechargeFragmentListener() {
 	@Override 
 	public void onFragmentClose() {
-		
+		//will be called when the fragment is closed
 	}	
 });
 
