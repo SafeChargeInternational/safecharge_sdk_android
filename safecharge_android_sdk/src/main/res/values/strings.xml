@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">safecharge_android_SDK</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="fieldCreditCardHint">Credit Card Number</string>
+    <string name="monthYearHint">MM/YY</string>
+    <string name="cvvHint">CVV</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>
