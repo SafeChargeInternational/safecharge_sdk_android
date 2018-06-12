@@ -360,7 +360,7 @@ public class CreditCardValidator {
 
     public static boolean luhnCheck(String number){
         String numberOnly = number.replaceAll("[^0-9]","");
-        if ( numberOnly.length() < 12 ) {
+        if ( numberOnly.length() < 15 ) {
             return false;
         }
 
