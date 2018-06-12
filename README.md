@@ -29,7 +29,7 @@ You will need to obtain MerchantId, merchantSiteId, clientRequestId and secretKe
 					"mY4QUnfnH2JO8cnSN6fm0aqRMsXOUDKu1Cx0im5eFzHOiGQ9WPbQaFopSgO1Vmp8" //secretKey
 					);
 
-		m_billingAddress = new BillingAddress("London","UK","1263","user@example.com","Harry","Potter","UK");
+		m_billingAddress = new BillingAddress("New York","US","2223","user@example.com","Harry","Potter","CA");
 
 		m_safeChargeFragment = SafechargePaymentFragment.newInstance(this,m_safeChargeAuthRequest, m_billingAddress,"HarryPotter", ServiceConstants.IntegrationBaseURL);
 		
