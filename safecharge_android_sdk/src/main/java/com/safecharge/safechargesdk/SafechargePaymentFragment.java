@@ -491,7 +491,7 @@ public class SafechargePaymentFragment extends Fragment {
             else {
                 resultDisplayStr = "Scan was canceled.";
             }
-        }/
+        }
     }
 
     @Override
