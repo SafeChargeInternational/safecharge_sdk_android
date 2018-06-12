@@ -23,21 +23,21 @@ You will need to obtain MerchantId, merchantSiteId, clientRequestId and secretKe
         	super.onCreate(savedInstanceState);
 	
     	try {
-        	m_safeChargeAuthRequest = new AuthorizationRequest("8912193623117089371", //merchantID
-                                                            "125823",   // merchantSiteID
-                                                            "111899", //clientID
-                                                            "mY4QUnfnH2JO8cnSN6fm0aqRMsXOUDKu1Cx0im5eFzHOiGQ9WPbQaFopSgO1Vmp8" //secretKey
-                                                            );
+		m_safeChargeAuthRequest = new AuthorizationRequest("8912193623117089371", //merchantID
+					"125823",   // merchantSiteID
+					"111899", //clientID
+					"mY4QUnfnH2JO8cnSN6fm0aqRMsXOUDKu1Cx0im5eFzHOiGQ9WPbQaFopSgO1Vmp8" //secretKey
+					);
 
-        	m_billingAddress = new BillingAddress("London","UK","1263","user@example.com","Harry","Potter","UK");
+		m_billingAddress = new BillingAddress("London","UK","1263","user@example.com","Harry","Potter","UK");
 
-        	m_safeChargeFragment = SafechargePaymentFragment.newInstance(this,m_safeChargeAuthRequest, m_billingAddress,"HarryPotter", ServiceConstants.IntegrationBaseURL);
-
-    	   } catch (InvalidAuthorizationException e) {
+		m_safeChargeFragment = SafechargePaymentFragment.newInstance(this,m_safeChargeAuthRequest, m_billingAddress,"HarryPotter", ServiceConstants.IntegrationBaseURL);
+		
+		} catch (InvalidAuthorizationException e) {
 		//issue with the provided authorization request data
-	   } catch (InvalidArgumentException e) {
-      		// There was an issue with your authorization string.
-    	  }
+		} catch (InvalidArgumentException e) {
+		// There was an issue with your authorization string.
+	}
 	}
 
 ## Register Listeners 
