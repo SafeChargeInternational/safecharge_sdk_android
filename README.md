@@ -26,7 +26,7 @@ You will need to obtain MerchantId, merchantSiteId, clientRequestId and secretKe
         m_safeChargeAuthRequest = new AuthorizationRequest("8912193623117089371", //merchantID
                                                             "125823",   // merchantSiteID
                                                             "111899", //clientID
-                                                        "mY4QUnfnH2JO8cnSN6fm0aqRMsXOUDKu1Cx0im5eFzHOiGQ9WPbQaFopSgO1Vmp8" //secretKey
+                                                            "mY4QUnfnH2JO8cnSN6fm0aqRMsXOUDKu1Cx0im5eFzHOiGQ9WPbQaFopSgO1Vmp8" //secretKey
                                                             );
 
         m_billingAddress = new BillingAddress("London","UK","1263","user@example.com","Harry","Potter","UK");
@@ -47,14 +47,17 @@ You will need to obtain MerchantId, merchantSiteId, clientRequestId and secretKe
 ### SafechargePaymentListener
 
 m_safeChargeFragment.addPaymentListener(new SafechargePaymentListener() {
+
 	@Override 
 	public void onTokenizeCard(CardTransactionResultModel cardTransactionResult) {
 		//everything you need
 	}
+	
 	@Override 
 	public void onTokenizeCardError(ServiceError error) {
 		//service error can be handled here
 	}
+	
 });
 
 ### FragmentListener
